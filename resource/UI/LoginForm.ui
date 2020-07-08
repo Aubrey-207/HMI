@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>708</width>
+    <height>522</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="widget_bottom" native="true">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>200</y>
+     <width>531</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox {
+	font-size: 20px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+   </property>
+   <widget class="QComboBox" name="comboBox_Account">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>40</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QComboBox {
+	font-size: 30px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QComboBox:hover {
+	border-bottom: 1px solid gray;
+}
+QComboBox:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+QComboBox::drop-down {
+	background-color: transparent;    
+	width: 60px;
+	height: 40px;               
+}
+QComboBox::down-arrow {
+	image: url(:/login/login_combobox_icon.png);
+	width: 60px;
+	height: 20px;
+}
+QComboBox QAbstractItemView {
+	min-height: 60px;
+}
+QComboBox QAbstractItemView:item {
+	color: lightblue;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Password">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>130</y>
+      <width>271</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+	font-size: 30px;
+	border: none;
+	border-bottom: 1px solid lightgray;
+	background-color: transparent;
+}
+QLineEdit:hover {
+	border-bottom: 1px solid gray;
+}
+QLineEdit:focus {
+	border-bottom: 1px solid rgb(18, 183, 245);
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>60</y>
+      <width>108</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>用户名：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>140</y>
+      <width>108</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>密码：</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_Login">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>190</y>
+      <width>181</width>
+      <height>46</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: rgb(33, 174, 250);
+	border-radius: 8px;
+	color: white;
+	spacing: 20px;
+}
+QPushButton:hover {
+	background-color: rgb(72, 203, 250);
+}
+QPushButton:pressed {
+	background-color: rgb(85, 85, 255);
+}
+QPushButton:disabled {
+	background-color: rgb(167, 167, 167);
+}</string>
+    </property>
+    <property name="text">
+     <string>安全登录</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../image/image.qrc">
+      <normaloff>:/login/login_btn_icon.png</normaloff>:/login/login_btn_icon.png</iconset>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../image/image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

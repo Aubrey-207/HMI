@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2006</width>
+    <height>962</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: top center;
+     border:1px solid #8D8D91;
+     border-radius:3px;
+     min-width:150px;
+     min-height:30px;
+     margin-bottom:10px;
+     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0.2 #F5F5F5, stop: 0.8 #FEFEFE);
+}
+QGroupBox {
+	 border:1px solid #8D8D91;
+     border-radius:8px;
+}
+QLabel {
+     border: 0px solid #8D8D91;
+     padding: 1px;
+     background:transparent;
+}
+QLineEdit {
+     background:#FFFFFF;
+     selection-background-color: #4197FF;
+     border: 1px solid #8D8D91;
+     padding: 2px;
+     min-height: 35px;
+     border-radius:5px;
+}
+ /*
+     border也可以加入渐变
+     border-top-color:qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(206, 210, 255, 255));
+     border-left-color:qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(206, 210, 255, 255));
+     border-right-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(206, 210, 255, 255), stop:1 rgba(255, 255, 255, 255));
+     border-bottom-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(206, 210, 255, 255), stop:1 rgba(255, 255, 255, 255));
+     
+ */
+QLineEdit:hover{
+     border:2px solid #B4B4D0F5;
+     border-radius:5px;
+     }
+ 
+QLineEdit:focus{
+     border:2px solid #7EA3D9;
+}
+ 
+QLineEdit:read-only {
+     border: 1px solid #DCDCDC;
+     color: lightgray;
+}
+QLineEdit:disabled {
+     border: 1px solid #DCDCDC;
+     color: lightgray;
+}
+QPushButton {
+     border: 1px solid #8D8D91;
+     border-radius: 10px;
+     background-color: QLinearGradient( x1: 0, y1: 0, x2: 0, y2: 1, 
+         stop: 0 #FEFEFE, stop: 0.05 #FBFBFB,stop: 0.4 #FBFBFB, 
+         stop: 0.9 #F5F5F5, stop: 1 #F5F5F5);
+     padding: 2px;
+     min-height: 80px;
+     min-width:180px;
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="2">
+    <widget class="QPushButton" name="btn_Start">
+     <property name="minimumSize">
+      <size>
+       <width>186</width>
+       <height>86</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>启动</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="2">
+    <widget class="QPushButton" name="btn_Clear">
+     <property name="minimumSize">
+      <size>
+       <width>186</width>
+       <height>86</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>清料</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="btn_Origion">
+     <property name="minimumSize">
+      <size>
+       <width>186</width>
+       <height>86</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>200</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>回原点</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <widget class="QPushButton" name="btn_Stop">
+     <property name="minimumSize">
+      <size>
+       <width>186</width>
+       <height>86</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>停止</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="btn_Pause">
+     <property name="minimumSize">
+      <size>
+       <width>186</width>
+       <height>86</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>暂停</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1" rowspan="2">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="minimumSize">
+      <size>
+       <width>711</width>
+       <height>411</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>实时信息</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="0" rowspan="2">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="minimumSize">
+      <size>
+       <width>711</width>
+       <height>411</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>状态显示</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1" rowspan="6">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="minimumSize">
+      <size>
+       <width>711</width>
+       <height>411</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>报警信息</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>30</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="textEdit_Alarm">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="6">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="minimumSize">
+      <size>
+       <width>711</width>
+       <height>411</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>生产数据统计</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>60</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="1" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>生产总数:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_TotalCount">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>OK数:    </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_OKCount"/>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="1">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>600</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>NG数:    </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_NGCount"/>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>比率:    </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="0">
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>167</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../image/image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

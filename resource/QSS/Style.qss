@@ -1,0 +1,35 @@
+Qlabel{
+    background-color: yellow;
+}
+
+QLabel:hover{
+    background-color: orange;
+}
+
+/* === QPushButton === */
+QPushButton {
+    background-color: rgb(147, 224, 255);
+    border-style:inset;
+    border: 1px solid #333333;
+    padding: 4px;
+    border-radius:10px;
+}
+
+QPushButton:hover {
+    background-color: rgb(200, 200, 169);
+    border-color: #444444;
+}
+
+QPushButton:pressed {
+    background-color: #111111;
+    border-color: #333333;
+    color: yellow;
+}
+
+QMdiArea {
+    border-radius:20px;
+}
+
+QPushButton:disabled {
+    color: #333333;
+}

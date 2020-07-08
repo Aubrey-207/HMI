@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2044</width>
+    <height>1150</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>宋体</family>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label_logo">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../image/image.qrc">:/SAA.png</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="label_FixtureName">
+     <property name="font">
+      <font>
+       <family>Cambria</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="6">
+    <widget class="QLabel" name="label_Date">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="7">
+    <widget class="QMdiArea" name="mdiArea"/>
+   </item>
+   <item row="2" column="0">
+    <widget class="QPushButton" name="btn_AutoRun">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>自动运行</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="btn_AxisDebug">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>轴调试</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="btn_FunctionTest">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>功能测试</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QPushButton" name="btn_IODebug">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>IO调试</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <widget class="QPushButton" name="btn_Parameter">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>参数设置</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
+    <widget class="QPushButton" name="btn_Alarm">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>报警记录</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="6">
+    <widget class="QPushButton" name="btn_UserChange">
+     <property name="minimumSize">
+      <size>
+       <width>150</width>
+       <height>80</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>用户切换</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../image/image.qrc"/>
+  <include location="../image/image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

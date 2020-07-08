@@ -1,0 +1,67 @@
+{
+    "axis": [
+        {
+            "axis_id": "1",
+            "axis_name": "axis_x",
+            "axis_points": [
+                {
+                    "point_id" : "1",
+                    "point_name": "home",
+                    "address": "40"
+                },
+                {
+                    "point_id" : "2",
+                    "point_name": "work",
+                    "address": "40"
+                },
+                {
+                    "point_id" : "3",
+                    "point_name": "P1",
+                    "address": "40"
+                },
+                {
+                    "point_id" : "4",
+                    "point_name": "P2",
+                    "address": "40"
+                }
+            ]
+        },
+        {
+            "axis_id": "2",
+            "axis_name": "axis_y",
+            "axis_points": [
+                {
+                    "point_id" : "1",
+                    "point_name": "home",
+                    "address": "40"
+                },
+                {
+                    "point_id" : "2",
+                    "point_name": "work",
+                    "address": "40"
+                }
+            ]
+        },
+        {
+            "axis_id": "3",
+            "axis_name": "axis_z",
+            "axis_points": [
+                {
+                    "point_id" : "1",
+                    "point_name": "home",
+                    "address": "40"
+                },
+                {
+                    "point_id" : "2",
+                    "point_name": "work",
+                    "address": "40"
+                },
+                {
+                    "point_id" : "3",
+                    "point_name": "P1",
+                    "address": "40"
+                }
+            ]
+        }
+    ]
+}

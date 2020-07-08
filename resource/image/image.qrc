@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="main">
+    <file>SAA.png</file>
+  </qresource>
+  <qresource prefix="login">
+    <file>login_btn_icon.png</file>
+    <file>login_combobox_icon.png</file>
+  </qresource>
+</RCC>
